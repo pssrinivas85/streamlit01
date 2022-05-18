@@ -17,8 +17,8 @@ from pathlib import Path
 
 ##############################################
 ## Identify local path to store zipped files
-LocalPath = "C:/ud 2022/Bus capstone/mile2"
-outputDir = "https://github.com/pssrinivas85/streamlit01/blob/main/"
+LocalPath = ""
+outputDir = ""
 
 #--------------------------------------------
 def check_if_submit(submitted,File1):
@@ -38,7 +38,7 @@ def check_if_submit(submitted,File1):
         # print(outDF)
 
         ##13 Read and format data in liveCustomerList file
-        liveCustomerListName = "/liveCustomerList.csv"
+        liveCustomerListName = "./liveCustomerList.csv"
         liveCustomerListPath = outputDir + liveCustomerListName
         liveCustomerListDF = pd.read_csv(liveCustomerListPath)
         liveCustomerListDF['firstName'] = liveCustomerListDF['firstName'].str.lower()
@@ -47,7 +47,7 @@ def check_if_submit(submitted,File1):
         liveCustomerListDF['lastName'] = liveCustomerListDF['lastName'].str.strip()
 
         ##14 Read and format data in liveFraudList file
-        liveFraudListName = "/liveFraudList.csv"
+        liveFraudListName = "./liveFraudList.csv"
         liveFraudListPath = outputDir + liveFraudListName
         liveFraudListDF = pd.read_csv(liveFraudListPath)
         liveFraudListDF['firstName'] = liveFraudListDF['firstName'].str.lower()
