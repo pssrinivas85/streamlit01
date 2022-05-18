@@ -98,7 +98,7 @@ if len(text) > 1 and submitted == True:
     st.write('the link:')
     resp = requests.get(text)
     re = st.write(text)
-    IPFileFolder = "./dropbox_"+datetime.now()
+    IPFileFolder = "./dropbox_"+datetime.now().strftime('%M:%S.%f')[8:11]
     IPFilePath = LocalPath + IPFileFolder
     #resp1 = get_url_file_name(text)
 
