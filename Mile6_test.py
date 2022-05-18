@@ -18,7 +18,7 @@ from pathlib import Path
 ##############################################
 ## Identify local path to store zipped files
 LocalPath = "C:/ud 2022/Bus capstone/mile2"
-outputDir = "C:/ud 2022/Bus capstone/mile2/dropbox"
+outputDir = "https://github.com/pssrinivas85/streamlit01/blob/main/"
 
 #--------------------------------------------
 def check_if_submit(submitted,File1):
