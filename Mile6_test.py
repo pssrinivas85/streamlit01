@@ -14,6 +14,7 @@ import bs4 as bs
 import urllib.request as url
 import requests
 from pathlib import Path
+from datetime import datetime
 
 ##############################################
 ## Identify local path to store zipped files
